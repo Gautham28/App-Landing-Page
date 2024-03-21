@@ -1,0 +1,153 @@
+/* Reset default margin and padding */
+body, h1, h2, p, ul {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Sniglet', Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #E1F0DA; /* Light Green */
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+nav {
+    background-color: #99BC85; /* Dark Green */
+    padding: 10px 0;
+}
+
+nav .container {
+    display: flex;
+    align-items: center;
+}
+
+.logo img {
+    width: 50px; /* Adjust as needed */
+}
+
+.title {
+    margin-left: 10px; /* Adjust spacing between logo and name */
+}
+
+.title h1 {
+    font-size: 24px;
+    color: #fff;
+}
+
+header {
+    padding: 20px 0;
+}
+
+header .title p {
+    color: #666;
+}
+
+main {
+    padding: 20px 0;
+}
+
+#features {
+    margin-bottom: 50px;
+}
+
+ul {
+    list-style-type: none;
+}
+
+button {
+    padding: 10px 20px;
+    background-color: #99BC85; /* Dark Green */
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-family: 'Sniglet', Arial, sans-serif;
+}
+
+button:hover {
+    background-color: #BFD8AF; /* Lighter Green */
+}
+
+footer {
+    background-color: #D4E7C5; /* Light Green */
+    color: #333;
+    padding: 10px 0;
+}
+
+footer .contact {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+footer .contact p {
+    margin-right: 10px;
+}
+
+footer .social-icons img {
+    width: 30px; /* Adjust icon size */
+    margin: 0 5px;
+}
+
+/* Styles for the screenshot */
+.screenshot-container {
+    text-align: center;
+}
+
+.screenshot-container img {
+    max-width: 100%;
+    height: auto;
+    margin: 0 auto; /* Center the image horizontally */
+}
+
+/* Media Queries for Responsive Design */
+@media screen and (max-width: 768px) {
+    .container {
+        padding: 0 10px;
+    }
+
+    .title h1 {
+        font-size: 20px;
+    }
+
+    header {
+        padding: 10px 0;
+    }
+
+    main {
+        flex-direction: column;
+    }
+
+    .left-container,
+    .right-container {
+        width: 100%;
+    }
+
+    .left-container {
+        margin-right: 0;
+        margin-bottom: 20px;
+    }
+
+    .screenshot-container {
+        margin-bottom: 20px;
+    }
+
+    footer .contact {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    footer .contact p {
+        margin-right: 0;
+        margin-bottom: 5px;
+    }
+
+    footer .social-icons img {
+        margin: 0 3px;
+    }
+}
